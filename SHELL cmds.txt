@@ -1,0 +1,79 @@
+Start a shell script -> #!/bin/bash
+To execute a shell script -> ./filename.sh (change the file permission each time-> chmod 777 filename.sh)
+Press q to quit or press ctrl+c to stop the script/cmd from running
+To switch to root user ->sudo su - (eg:su usha)
+------------------------------------------------------------------------------------------------------------
+man ->fetches details of a cmd -> man pwd 
+date
+
+nproc
+free
+top
+
+pwd
+ls
+ls -l
+ls -ltr
+
+cat ->to see the content of a file
+
+mkdir
+cd
+cd ..
+cd ../..
+rm ile/directoryname
+
+chmod ->change file permission-> chmod 777 filename.sh
+
+touch filename
+
+vi filename  ->i,wq!,q! (press Esc each time)
+vim filename
+
+df -h ->disk space
+free -g ->memory
+nproc ->resource
+
+set -exo 
+set -x ->debug mode
+set -e ->exit the script when there is an error
+set -o ->pipefail (to enable set -e to show an error in the pipeline cmd (|) coz set -e considers the output of the last cmd in the pipline)
+
+ps ->processes
+ps -ef -> all processes including demon 
+
+grep -> to filter specific details from a list/output of a command.
+| -> sends the output of first cmd to the second cmd
+
+awk ->filterout some columns from an outut -> awk -F" " '{print $2}' ->prints only 2nd column
+
+
+To download packages from inetrnet/get logfiles
+curl ->fetches the output from internet/from a URL (transfer a URL)
+curl https://raw.githubusercontent.com/iam-veeramalla/sandbox/main/log/dummylog01122022.log | grep ERROR  ->fetches ERRORs from a logfile stored in a github repository whose URL is passed to curl cmd.
+Wget ->stores the logfile into your localdisk.
+wget https://raw.....  ->dowloads the logfile in a file "dummylog01122022.log"
+cat dummylog01122022.log | grep ERROR (gives the same output as curl)
+
+sudo -> sudo find / pam ->execute  cmd as a root user
+
+find ->search for files in a directory hierarchy
+find / -name filename->sudo find /-name pam (/ indicates search or pam.c in entire file sysem/everywhere)
+
+--------------------
+if-ifelse-for
+if [expression]
+then 
+	fdgdhdh
+	bhhfhfhfnnf
+else
+	klliw
+fi
+--------------------
+for i in {1.100}; do echo $1; done
+i.e, for i=1 to 100 i++
+--------------------------
+
+trap -> to trap signals -> trap "echo dont use the ctrl+c" SIGINT^C
+kill ->kill a process -> kill -9 1111
+ 
