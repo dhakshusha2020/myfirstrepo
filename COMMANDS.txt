@@ -1,0 +1,14 @@
+------------------------------
+GIT
+------------------------------
+
+git init -initiate a repo
+git add -add/track
+git commit --versioning (git commit -m "this is my first version of addition")
+git push
+git status -to know the status of repo
+git diff  ---to know the exact chages made
+git log
+git reset --hard 5566hsdtwwy --to go back to previous versions--copy the commit no from "git log")
+
+To create a distributed copy, use GitHub/Self Hosted/Bitbucket
